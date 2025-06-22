@@ -53,15 +53,12 @@
 
 1. claude code のコンテキストをクリア（`/clear`）
 1. claude code で`/plan-github-issue {イシュー番号}`実行。
-   - GitHub に新しい issue が作成される。
+   - GitHub に **新しい issue** が作成される。
    - 元の issue は close になる。
 1. GitHub で issue を確認する。  
    必要な場合は編集する。
-1. ブランチを変えておく。ブランチ名は任意で OK  
-   `git switch -c feature-{プランイシュー番号}`  
-   **イシュー番号が変わっているので注意**  
-   FIXME: fix-github-issue でブランチを勝手に切ってほしい。
 1. claude code で`/fix-github-issue {プランイシュー番号}`
+   **イシュー番号が変わっているので注意**  
 1. `/clear`する。
 1. レビューさせる。`/review-local-changes {番号}`
 1. reviews/isuue-{番号}-review.md を確認する。  
